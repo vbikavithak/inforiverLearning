@@ -73,7 +73,7 @@ const FunDropdown = () => {
   return (
     <div className="dropdown">
       <div className="dropdown-btn" >
-        <button className="button" disabled = {goNext===""}><Link to={goPrev}>Previous</Link></button>
+        <button className="button" disabled = {goNext===""}><Link to={goPrev}> Previous</Link></button>
       </div>
       <div className="dropdown-btn" onClick={(e) => setisActive(!isActive)}>
         <span> {selected}</span>
@@ -91,7 +91,7 @@ const FunDropdown = () => {
               }} 
               className="dropdown-item"
                >
-              <Link  to={samples.to} >
+              <Link className="link" to={samples.to} >
 
 
               

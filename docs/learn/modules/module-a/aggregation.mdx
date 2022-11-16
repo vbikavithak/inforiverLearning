@@ -1,72 +1,17 @@
 ---
 id: aggregation
-title: Aggregation
+title: ""
 sidebar_label: Aggregation
 ---
 
-import FunDropdown  from "./FunDropdown.js";
+import FunDropdown from "./FunDropdown.js";
+import styles from "../../../../src/css/learn/learn.module.css";
+import clsx from "clsx";
 
-<ul
-  class="breadcrumbs"
-  itemscope=""
-  itemtype="https://schema.org/BreadcrumbList">
-
-  <li class="breadcrumbs__item">
-    <a aria-label="Home page" class="breadcrumbs__link" href="/">
-      <svg
-        viewBox="0 0 24 24"
-        class="breadcrumbHomeIcon_node_modules-@docusaurus-theme-classic-lib-theme-DocBreadcrumbs-styles-module">
-        <path
-          d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-          fill="currentColor"></path>
-      </svg>
-    </a>
-  </li>
-  <li class="breadcrumbs__item">
-    <span class="breadcrumbs__link">Introduction</span>
-    <meta itemprop="position" content="1" />
-  </li>
-  <li
-    itemscope=""
-    itemprop="itemListElement"
-    itemtype="https://schema.org/ListItem"
-    class="breadcrumbs__item breadcrumbs__item--active">
-    <span class="breadcrumbs__link" itemprop="name">
-      Export and Import
-    </span>
-    <meta itemprop="position" content="2" />
-  </li>
-</ul>
-
-<FunDropdown/>
-
-<ol class="breadcrumbs">
-  <li class="breadcrumbs-item" >
-    <a href="/"> Learn </a>
-  </li>
-  <li class="breadcrumbs-item">
-    <a href="/learn/training"> Training </a>
-  </li>
-
-  <li class="breadcrumbs-item" >
-    <a href="/en-us/training/browse/"> Browse </a>
-  </li>
-
-  <li class="breadcrumbs-item" >
-    <a href="/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/">
-  
-      Microsoft Azure Fundamentals: Describe cloud concepts 
-    </a>
-  </li>
-
-  <li class="breadcrumbs-item" >
-    <a href="/en-us/training/modules/describe-cloud-compute/" >
-      {" "}
-      Describe cloud computing{" "}
-    </a>
-  </li>
-</ol>
+<div className={clsx(styles.page, "item shadow--md")}>
 
 # Aggregation
 
+  <FunDropdown />
 
+</div>

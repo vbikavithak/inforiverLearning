@@ -11,10 +11,9 @@
     padding: 0.5rem;
     height: 3rem;
     width: 5rem;
-    width: 50rem;
+    width: 59rem;
     display: grid;
-    grid-template-columns: auto 38rem auto;
-    border: 2px solid black;
+    grid-template-columns: auto 45rem auto;
     text-align: center;
     
 
@@ -58,6 +57,7 @@
 }
 
 .dropdown-content :hover{
+    border-left: 2px solid #1B70DA;
     padding: 11px;
     box-shadow: 3px 3px 10px 6px rgba(0,0 ,0,0.06);
     transition: all 0.2s ;

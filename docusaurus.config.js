@@ -37,7 +37,7 @@ module.exports = {
       title: "Inforiver Guide",
       logo: {
         alt: "Inforiver Logo",
-        src: "img/inforiver-design.png",
+        src: "img/inforiver-logo.svg",
         href: "/",
       },
       items: [
