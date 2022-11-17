@@ -67,9 +67,7 @@
   --ifm-spacing-horizontal: 0 !important;
 }
 
-@media (min-width: 997px) {
-  .col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
+.col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  max-width: 100% !important;
+  margin: 0 !important;
 }

@@ -107,6 +107,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
+          breadcrumbs: false,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
