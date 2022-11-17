@@ -2,6 +2,7 @@
     --ifm-link-hover-color:#1B70DA;
 }
 
+
 .breadcrumbs{
     font-size: 1rem;
     margin: 0.125rem 0;
@@ -45,3 +46,27 @@
 .unitColumn:hover{
     border-color: #278cda;
 }
+
+.page{
+    text-align: center;
+    padding: 2rem;
+    margin: 0 10rem;
+    background-color:var(--ifm-background-color-for-page);
+}
+
+.unitColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 0.35rem solid #2F2F2F;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    transition: border-left .2s,
+}
+
+.unitColumn:hover{
+    border-color: #278cda;
+}
+
+
+
