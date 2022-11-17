@@ -1,103 +1,23 @@
 ---
 id: module-a
-title: Inforiver
+title: Module A
+description: Inforiver delivers the best of both worlds – spreadsheets & standardized BI reporting and visualizations – through a low-code / no-code architecture. Rapidly build dynamic and interactive formatted reports & financial statements with quick launch templates, on-the-fly configurations and visual calculations and collaborations.
 hide_title: true
+chapters:
+  - chapter: Export and Import
+  - chapter: Audit
+  - chapter: Themes
+  - chapter: Set Version
+  - chapter: Blend
+  - chapter: Invert
+  - chapter: Aggregation
+  - chapter: Report+
+  - chapter: Template Row
 ---
 
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import styles from "../../../src/css/learn/learn.module.css";
-import useBaseUrl from "@docusaurus/useBaseUrl"; 
+import Breadcrumbs from "@site/src/components/Breadcrumbs";
+import PageView from "@site/src/components/PageView"
 
-<nav
-  aria-label="breadcrumbs"
-  itemscope=""
-  itemtype="https://schema.org/BreadcrumbList"
-  className={styles.breadcrumbs}>
-  <ul class="breadcrumbs breadcrumbs--lg" style={{padding:"5px 10px"}}>
-    <a className={clsx(styles.breadcrumbsLink, "breabreadcrumbs__link")} href="/">
-      Home
-    </a>
-    <span style={{ padding: 0 }}>/</span>
-    <a
-      className={clsx(styles.breadcrumbsLink, "breabreadcrumbs__link","breadcrumbs__item--active")}
-      href="/learn/modules/module-a">
-        Learn
-    </a>
-    <span style={{ padding: 0 }}>/</span>
-     <a className={clsx(styles.breadcrumbsLink, "breabreadcrumbs__link")} href="/learn/modules/module-a">
-      Modules
-    </a>
-    <span style={{ padding: 0 }}>/</span>
-     <a className={clsx(styles.breadcrumbsLink,styles.breadcrumbsLinkActive)} href="/learn/modules/module-a">
-      Module A
-    </a>
-  </ul>
-</nav>
+<Breadcrumbs link={frontMatter.id} title={frontMatter.title}> </Breadcrumbs>
+<PageView  link={frontMatter.id} title={frontMatter.title} description={frontMatter.description} chapters={frontMatter.chapters}> </PageView>
 
-<div className={clsx(styles.page, "item shadow--md")}>
-  <div style={{ display: "flex", alignItems: "flex-start" }}>
-    <img alt="Dan Abramov Profile" src={useBaseUrl("/img/generic-trophy.svg")} />
-    <div style={{ padding: "2rem" }}>
-      <div style={{ textAlign: "left" }}>
-        <h1>Help Center</h1>
-      </div>
-      <div style={{ textAlign: "left" }}>
-        <p>
-          Inforiver delivers the best of both worlds – spreadsheets &
-          standardized BI reporting and visualizations – through a low-code /
-          no-code architecture. Rapidly build dynamic and interactive formatted
-          reports & financial statements with quick launch templates, on-the-fly
-          configurations and visual calculations and collaborations.
-        </p>
-        <div>
-          <Link
-            className="button button--outline button--secondary button--lg"
-            to="learn/export-and-import">
-            <div>Start</div>
-          </Link>
-        </div>
-      </div>
-      <div>
-        <div style={{ padding: "2.5rem 0" }}>
-          <div className={styles.unitColumn}>
-            <a href="module-a/export-and-import">Export and Import</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/audit">Audit</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/themes">Themes</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/set-version">Set Version</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/blend">Blend</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/invert">Invert</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/aggregation">Aggregation</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/report">Report+</a>
-            <span> 2 mins</span>
-          </div>
-          <div className={styles.unitColumn}>
-            <a href="module-a/template-row">Template row</a>
-            <span> 2 mins</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

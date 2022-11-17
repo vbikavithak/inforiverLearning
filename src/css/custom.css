@@ -29,8 +29,8 @@
   --doc-sidebar-width: 0 !important;
   --doc-sidebar-hidden-width: 0 !important;
   --ifm-container-width: 100%;
-  --ifm-background-color-for-page:#FFFFFF ;
-  --ifm-background-color-for-breadcrumbs:#FFFFFF;
+  --ifm-background-color-for-page: #FFFFFF;
+  --ifm-background-color-for-breadcrumbs: #FFFFFF;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -42,21 +42,24 @@
   --ifm-color-primary-light: #0a2230;
   --ifm-color-primary-lighter: #0a2433;
   --ifm-color-primary-lightest: #0c2839;
-  --ifm-background-color:#2F2F2F !important;
+  --ifm-background-color: #2F2F2F !important;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255);
   --ifm-font-color-base-inverse: rgba(255, 255, 255);
-  --ifm-navbar-link-hover-color:rgba(255,255,255,0.25);
-  --ifm-breadcrumb-color-active:rgba(255,255,255,0.25);
-  --ifm-menu-color-active:rgba(255,255,255,0.5);
-  --ifm-link-color:rgba(255,255,255,0.5);
-  --ifm-background-color-for-page:#091F2C ;
-  --ifm-background-color-for-breadcrumbs:#000000;
-  --ifm-navbar-background-color:#000000;
-  }
+  --ifm-navbar-link-hover-color: rgba(255, 255, 255, 0.25);
+  --ifm-breadcrumb-color-active: rgba(255, 255, 255, 0.25);
+  --ifm-menu-color-active: rgba(255, 255, 255, 0.5);
+  --ifm-link-color: rgba(255, 255, 255, 0.5);
+  --ifm-background-color-for-page: #091F2C;
+  --ifm-background-color-for-breadcrumbs: #000000;
+  --ifm-navbar-background-color: #000000;
+}
 
-.container.padding-top--md.padding-bottom--lg{
-    margin: 0 !important;
-    padding: 0 !important;
+.container.padding-top--md.padding-bottom--lg {
+  margin: 0 !important;
+  padding: 0 !important;
+  --ifm-container-width: 100% !important;
+  --doc-sidebar-width: 0 !important;
+  --doc-sidebar-hidden-width: 0 !important;
 }
 
 .docMainContainerEnhanced_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Main-styles-module {
@@ -64,9 +67,9 @@
   --ifm-spacing-horizontal: 0 !important;
 }
 
-@media (min-width: 997px){
-.col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+@media (min-width: 997px) {
+  .col.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
     max-width: 100% !important;
-    margin:0 !important;
-}
+    margin: 0 !important;
+  }
 }

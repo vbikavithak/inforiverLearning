@@ -1,0 +1,16 @@
+---
+id: module-c
+title: Module C
+hide_title: true
+chapters:
+  - chapter: Export and Import
+  - chapter: Audit
+  - chapter: Report+
+---
+
+import Breadcrumbs from "@site/src/components/Breadcrumbs";
+import PageView from "@site/src/components/PageView"
+
+<Breadcrumbs link={frontMatter.id} title={frontMatter.title}> </Breadcrumbs>
+<PageView  link={frontMatter.id} title={frontMatter.title} chapters={frontMatter.chapters}> </PageView>
+

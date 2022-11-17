@@ -1,18 +1,17 @@
 //TODO: Remove this
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 module.exports = {
   title: "Inforiver Documentation",
   tagline:
     "Learn how to install, Model, Plan, Simulate, and Analyze with Inforiver",
   //TODO: Change this url
-  url: "https://your-docusaurus-test-site.com",
+  url: "http://127.0.0.1:3001",
   baseUrl: "/",
   noIndex: true, // Defaults to `false`
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  //TODO: Change this favicon
   favicon: "img/favicon.ico",
   organizationName: "Lumel", // Usually your GitHub org/user name.
   projectName: "inforiver-docusaurus", // Usually your repo name.
@@ -24,14 +23,6 @@ module.exports = {
   },
 
   themeConfig: {
-    //TODO: Configure google analytics 
-    // googleAnalytics: {
-    //TODO: Know about this.
-    //   trackingID: "UA-136298126-1",
-    //   // Optional fields.
-    //   anonymizeIP: true, // Should IPs be anonymized?
-    // },
-
     navbar: {
       hideOnScroll: true,
       title: "Inforiver Guide",
@@ -108,6 +99,11 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
+        // googleAnalytics: {
+        //   trackingID: "UA-136298126-1",
+        //   anonymizeIP: true,
+        // },
+
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
