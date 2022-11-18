@@ -31,6 +31,7 @@
   --ifm-container-width: 100%;
   --ifm-background-color-for-page: #FFFFFF;
   --ifm-background-color-for-breadcrumbs: #FFFFFF;
+  --ifm-background-color-dropdown: #FFFFFF;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -52,6 +53,7 @@
   --ifm-background-color-for-page: #091F2C;
   --ifm-background-color-for-breadcrumbs: #000000;
   --ifm-navbar-background-color: #000000;
+  --ifm-background-color-dropdown:#000000;
 }
 
 .container.padding-top--md.padding-bottom--lg {

@@ -9,20 +9,17 @@
   padding: 0.5rem;
   height: 3rem;
   margin-top: 2rem;
+  margin-left: 36rem;
   width: 5rem;
-  width: auto;
-  display: grid;
-  grid-template-columns: auto 10rem auto;
-  text-align: center;
+  width: 11rem;
   justify-content: center;
 }
 
 .dropdown-btn {
   user-select: none;
   font-weight: bold;
-  color: rgb(12, 11, 11);
+  color: var(--ifm-text-color-dropdown);
   cursor: pointer;
-  padding: 0.4rem;
 }
 .dropdown-btn :hover {
   height: 2rem;
@@ -35,10 +32,9 @@
 .dropdown-content {
   position: absolute;
   margin-top: 4rem;
-  margin-left: 22rem;
   padding: 1px;
   width: 30rem;
-  background: #fff;
+  background: var(--ifm-background-color-dropdown);
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: bold;
   color: #333;
@@ -58,32 +54,40 @@
   transition: all 0.2s;
   border-left: 2px solid #000;
   padding-left: 1rem;
+  text-decoration: none;
 }
 
 .pagination-nav__sublabel {
-  margin-bottom: -300px;
+  margin-bottom: -275px;
 }
 
 .pagination-nav {
   display: grid;
   grid-gap: var(--ifm-spacing-horizontal);
-  gap: 50rem;
+  gap: 24rem;
   grid-template-columns: repeat(2, 1fr);
 }
 .pagination-nav__link {
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: var(--ifm-pagination-nav-border-radius);
   display: block;
   height: 100%;
   line-height: var(--ifm-heading-line-height);
   padding: 1.5rem;
   transition: border-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
+  border: none;
 }
 .pagination-nav__link--prev {
-  text-align: right;
+  text-align: center;
+
 }
 
 .pagination-nav__link--next {
-  text-align: left;
+  text-align: center;
+  content: none;
 }
+
+.dropdown-box {
+  display: flex;
+  justify-content: center;
+}
+
