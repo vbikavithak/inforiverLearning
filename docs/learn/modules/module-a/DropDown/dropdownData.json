@@ -17,8 +17,8 @@
     "id": 3,
     "from": "Themes ",
     "to": "/learn/modules/module-a/themes",
-    "prev": "/learn/modules/module-a/export-and-import",
-    "next": "/learn/modules/module-a/set-version"
+    "prev": "/learn/modules/module-a/audit",
+    "next": "/learn/modules/module-a/set%20version"
   },
   {
     "id": 4,
@@ -46,7 +46,7 @@
     "from": "Aggregation",
     "to": "/learn/modules/module-a/aggregation",
     "prev": "/learn/modules/module-a/invert",
-    "next": "/learn/modules/module-a/report"
+    "next": "/learn/modules/module-a/report+"
   },
   {
     "id": 8,
@@ -59,7 +59,7 @@
     "id": 9,
     "from": "Template row",
     "to": "/learn/modules/module-a/template%20row",
-    "prev": "/learn/modules/module-a/report",
+    "prev": "/learn/modules/module-a/report+",
     "next": ""
   }
 ]
