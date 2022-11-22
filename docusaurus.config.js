@@ -25,7 +25,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: true,
-      title: "Inforiver Guide",
+      title: "Inforiver",
       logo: {
         alt: "Inforiver Logo",
         src: "img/inforiver-design.png",
