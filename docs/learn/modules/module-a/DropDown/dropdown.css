@@ -6,35 +6,44 @@
 
 .dropdown {
   position: relative;
-  padding: 0.5rem;
   height: 3rem;
   margin-top: 2rem;
-  width: auto;
+  width: 100%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   display: grid;
   grid-gap: var(--ifm-spacing-horizontal);
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 .dropdown-btn {
-  user-select: none;
-  font-weight: bold;
-  color: var(--ifm-text-color-dropdown);
-  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: inherit;
+  border: none;
 }
-.dropdown-btn :hover {
-  height: 2rem;
+
+.unit-selection {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10rem;
+  width:10rem;
+}
+
+.unit-selection :hover {
   color: rgb(80, 118, 221);
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 0.4rem;
 }
 
 .dropdown-content {
   position: absolute;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-left: 25rem;
   padding: 1px;
   width: 30rem;
@@ -43,8 +52,6 @@
   font-weight: bold;
   color: #333;
   text-align: left;
-
-
 }
 .dropdown-item {
   padding: 10px;
@@ -67,44 +74,57 @@
   margin-bottom: -275px;
 }
 
-
-
 .button-24 {
-  background-color: #0095ff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #fff;
+  color: var(--ifm-text-color-dropdown);
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.15385;
-  margin: 0;
-  outline: none;
-  padding: 8px .8em;
+  padding: 2px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
+  font-family: "Segoe UI","SegoeUI", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  width: 7rem;
 }
 
-.button-24:hover,
-.button-24:focus {
-  background-color: #07c;
+.button-24:hover {
+  color: #0065b3;
+  border: 2px solid #0065b3;
+  border-radius: 2px;
+  display: inline-block;
 }
 
-.button-24:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+.disable-btn {
+  display: none;
 }
 
-.button-24:active {
-  background-color: #0064bd;
-  box-shadow: none;
+.arrow {
+  box-sizing: border-box;
+  height: 10px;
+  width: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin: -0.5rem;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.unit {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--ifm-text-color-dropdown);
+  cursor: pointer;
+  padding: 0.4rem;
+  font-family: "Segoe UI", "SegoeUI", Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding-inline: 0.75em;
+  line-height: 1.5;
 }

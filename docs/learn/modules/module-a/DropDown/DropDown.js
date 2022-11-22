@@ -47,13 +47,16 @@ const FunDropdown = () => {
   }
 
   return (
-    <div className="dropdown ">
+    <div className= "dropdown">
       <Link to={demo.prev}>
-        <button className="button-24" disabled={demo.prev === ""} onClick={forPerev}> &laquo; Previous</button>
+        <div className= {demo.prev==="" ? "disable-btn" : "button-24"} disabled={demo.prev === ""} onClick={forPerev}> &laquo; Previous</div>
       </Link>
 
-      <div className="dropdown-btn" onClick={(e) => setisActive(!isActive)}>
-        <span> {demo.from}</span>
+      <div className="unit-selection">
+      <button className="dropdown-btn" onClick={(e) => setisActive(!isActive)}>
+        <div className="unit"> {demo.from}</div>
+        <div class="arrow"></div>
+      </button>
       </div>
 
         {isActive && (
@@ -78,7 +81,7 @@ const FunDropdown = () => {
         )}
     
       <Link to={demo.next}>
-        < button className="button-24" disabled = {demo.next === ""} onClick={forNext}>Next &raquo;</button>
+        < div className= {demo.next==="" ? "disable-btn" : "button-24"} disabled = {demo.next === ""} onClick={forNext}>Next &raquo;</div>
       </Link>
     </div>
   );
